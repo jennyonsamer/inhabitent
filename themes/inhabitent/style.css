@@ -416,7 +416,7 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
+  color: #248A83; }
   a:visited {
     color: purple; }
   a:hover, a:focus, a:active {
@@ -666,3 +666,65 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+body .logo,
+.blog .logo {
+  width: 52px; }
+
+body li,
+body .page_item,
+.blog li,
+.blog .page_item {
+  margin-left: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end; }
+
+body .logo-nav,
+.blog .logo-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 100%;
+  padding: 0.3rem 10rem;
+  border-bottom: 1px solid #e1e1e1; }
+
+body nav,
+body .main-navigation,
+.blog nav,
+.blog .main-navigation {
+  clear: both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  text-transform: uppercase;
+  font-family: sans-serif; }
+
+body .entry-header,
+.blog .entry-header {
+  margin-top: 3rem;
+  position: relative; }
+  body .entry-header h2,
+  body .entry-header .entry-title,
+  .blog .entry-header h2,
+  .blog .entry-header .entry-title {
+    background: #248A83;
+    height: 100px;
+    width: 500px;
+    position: absolute;
+    bottom: 20rem;
+    text-align: center; }
+    body .entry-header h2 a,
+    body .entry-header .entry-title a,
+    .blog .entry-header h2 a,
+    .blog .entry-header .entry-title a {
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase; }

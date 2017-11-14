@@ -21,7 +21,6 @@ get_header(); ?>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-     <h1> <i class="fa fa-address-book" aria-hidden="true"></i> </h1>
 				<?php get_template_part( 'template-parts/content' ); ?>
 
 			<?php endwhile; ?>

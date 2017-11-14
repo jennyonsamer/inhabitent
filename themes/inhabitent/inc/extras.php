@@ -31,8 +31,11 @@ add_filter( 'login_headerurl', 'inhab_login_url' );
 function my_custom_login_logo() {
 	echo '<style type="text/css">                                                                   
 			#login h1 a { 
-			background:url(content-folder/images/logos/inhabitent-logo-text-dark.svg) !important; 
-			height: 120px !important; width: 410px !important; margin-left: -40px;}                            
+			background:url('.get_stylesheet_directory_uri().'/images/inhabitent-logo-text-dark.svg); 
+			height: 50px;
+			width: 100%;
+		  background-size: contain;
+		}                            
 	</style>';
 }
 add_action('login_head', 'my_custom_login_logo');
