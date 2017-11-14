@@ -18,11 +18,14 @@ body,
     display: flex;
     align-self: flex-end;
   }
-  
-  // nav{
-  //   display: flex;
-    
-  // }
+  //about
+  li,page-item-4
+  //find us
+  li,page-item-18
+  //journal
+  li,page-item-34
+  //shop
+  li page-item-32
 
   .logo-nav{
     display: flex;
@@ -59,7 +62,7 @@ body,
        text-decoration: none;
        text-transform: uppercase;
       }
-      
+
     }
   }
 }
