@@ -667,6 +667,16 @@ object {
 --------------------------------------------------------------*/
 /* Front page */
 /* Journal & About page*/
+.blog .site-content,
+.page-id-18 .site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.blog .content-area,
+.page-id-18 .content-area {
+  width: 72%; }
+
 .blog .logo,
 .page-id-18 .logo {
   width: 52px; }
@@ -761,7 +771,7 @@ object {
   position: relative; }
   .blog .entry-header img,
   .page-id-18 .entry-header img {
-    width: 70%; }
+    width: 100%; }
   .blog .entry-header h2,
   .blog .entry-header .entry-title,
   .page-id-18 .entry-header h2,
@@ -779,3 +789,13 @@ object {
       color: white;
       text-decoration: none;
       text-transform: uppercase; }
+    .blog .entry-header h2 .widget-area,
+    .blog .entry-header .entry-title .widget-area,
+    .page-id-18 .entry-header h2 .widget-area,
+    .page-id-18 .entry-header .entry-title .widget-area {
+      text-align: start; }
+    .blog .entry-header h2 .search-form,
+    .blog .entry-header .entry-title .search-form,
+    .page-id-18 .entry-header h2 .search-form,
+    .page-id-18 .entry-header .entry-title .search-form {
+      display: none; }
