@@ -666,6 +666,7 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+/* Journal & About page*/
 body .logo,
 .blog .logo {
   width: 52px; }
@@ -681,6 +682,30 @@ body .page_item,
   -ms-flex-item-align: end;
       align-self: flex-end; }
 
+body ul li.page-item-4,
+.blog ul li.page-item-4 {
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0; }
+
+body ul li.page-item-18,
+.blog ul li.page-item-18 {
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0; }
+
+body ul li.page-item-34,
+.blog ul li.page-item-34 {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1; }
+
+body ul li.page-item-32,
+.blog ul li.page-item-32 {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1; }
+
 body .logo-nav,
 .blog .logo-nav {
   display: -webkit-box;
@@ -689,6 +714,12 @@ body .logo-nav,
   max-width: 100%;
   padding: 0.3rem 10rem;
   border-bottom: 1px solid #e1e1e1; }
+  body .logo-nav .search-submit,
+  .blog .logo-nav .search-submit {
+    border: none;
+    background: none;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
 
 body nav,
 body .main-navigation,
@@ -698,6 +729,9 @@ body .main-navigation,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   -ms-flex-item-align: center;
       align-self: center;
@@ -707,10 +741,27 @@ body .main-navigation,
   text-transform: uppercase;
   font-family: sans-serif; }
 
+body fieldset,
+.blog fieldset {
+  border-style: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 1rem; }
+  body fieldset button,
+  .blog fieldset button {
+    padding: 0; }
+
+body .search-field,
+.blog .search-field {
+  border-style: none; }
+
 body .entry-header,
 .blog .entry-header {
   margin-top: 3rem;
   position: relative; }
+  body .entry-header img,
+  .blog .entry-header img {
+    width: 120%; }
   body .entry-header h2,
   body .entry-header .entry-title,
   .blog .entry-header h2,
