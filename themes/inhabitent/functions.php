@@ -83,6 +83,7 @@ add_filter( 'stylesheet_uri', 'red_starter_minified_css', 10, 2 );
  * Enqueue scripts and styles.
  */
 function red_starter_scripts() {
+	wp_enqueue_style( 'tent-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'red-starter-style', get_stylesheet_uri() );
 //if font awesime is a a .css link
 	// wp_enqeue_style(handle, srs, deps, media );

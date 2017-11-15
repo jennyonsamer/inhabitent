@@ -4,6 +4,13 @@
 
 /* Front page */
 
+body,
+.page-id-4{
+  .logo-nav{
+    position: absolute;
+  }
+}
+
 /* Journal & About page*/
   body,
   .blog {
@@ -16,28 +23,36 @@
       display: flex;
       align-self: flex-end;
     }
+    ul{
+      display: flex;
     //about
-    li,page-item-4{
-
+    li.page-item-4{
+      order: 0;
     }
     //find us
-    li,page-item-18{
-
+    li.page-item-18{
+      order: 0;
     }
     //journal
-    li,page-item-34{
-
+    li.page-item-34{
+  order: 1;
     }
     //shop
-    li page-item-32{
-      
+    li.page-item-32{
+      order: 1;
     }
+  }
 
     .logo-nav{
       display: flex;
       max-width: 100%;
       padding: 0.3rem 10rem;
       border-bottom: 1px solid #e1e1e1;
+      .search-submit {
+        border: none;
+        background: none;
+        box-shadow: none;
+      }
     }
 
     nav,
@@ -54,6 +69,9 @@
     .entry-header {
       margin-top: 3rem;
       position: relative;
+      img{
+      width: 120%;
+      }
       h2,
       .entry-title{
         background: $color__link;
