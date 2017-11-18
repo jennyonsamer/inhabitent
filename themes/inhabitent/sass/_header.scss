@@ -1,0 +1,48 @@
+//* Header *//
+
+.logo-nav{
+  display: flex;
+  max-width: 100%;
+  padding: 0.3rem 10rem;
+  border-bottom: 1px solid #e1e1e1;
+  .search-submit {
+    border: none;
+    background: none;
+    box-shadow: none;
+  }
+  .logo {
+    width:52px;
+    }
+  li,
+  .page_item {
+    margin-left: 1rem;
+    display: flex;
+    align-self: flex-end;
+  }
+
+
+.main-navigation {
+  clear: both;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  align-self: center;
+  justify-content: flex-end;
+  text-transform: uppercase;
+  font-family: $font__main;
+}
+
+fieldset {
+  border-style: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 1rem;
+  button{
+    padding: 0;
+  }
+}
+
+.search-field {
+  border-style: none;
+}
+}

@@ -9,6 +9,10 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+		<section class="hero-container">
+		<img src="<?php echo get_template_directory_uri() . '/images/home-hero.jpg'; ?>" class="home-hero" alt="inhabitent front page hero" />
+		<img src="<?php echo get_template_directory_uri() . '/images/inhabitent-logo-full.svg'; ?>" class="hero-logo" alt="inhabitent logo" />
+		</section>
 
 		<?php if ( have_posts() ) : ?>
 
@@ -35,6 +39,52 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+	<section class="product-info container">
+            <h2>Shop Stuff</h2>
+            <?php
+               $terms = get_terms( array(
+                   'taxonomy' => 'product-type',
+                   'hide_empty' => 0,
+               ) );
+							 if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) :
+            ?>
+               <div class="product-type-blocks">
+
+                  <?php foreach ( $terms as $term ) : ?>
+
+                     <div class="product-type-block-wrapper">
+                        <img src="<?php echo get_template_directory_uri() . '/images/' . $term->slug; ?>.svg" alt="<?php echo $term->name; ?>" />
+                        <p><?php echo $term->description; ?></p>
+                        <p><a href="<?php echo get_term_link( $term ); ?>" class="btn"><?php echo $term->name; ?> Stuff</a></p>
+                     </div>
+
+                  <?php endforeach; ?>
+
+               </div>
+               
+            <?php endif; ?>
+         </section>
+<div class="inhab-journal-container">
+	<?php
+    $args = array( 'numberposts' => '3', 'order' => 'ASC', );
+    $product_posts = get_posts( $args );?>
+            <?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
+								
+								
+						<?php if ( has_post_thumbnail() ) : ?>
+			<?php the_post_thumbnail( 'medium' ); ?>
+		<?php endif; ?>
+
+		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+
+						<div class="entry-meta">
+			<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?>
+		</div><!-- .entry-meta -->
+		<a href="<?php echo get_the_permalink();?>"> <p>Read More</p></a>
+
+            <?php endforeach; wp_reset_postdata(); ?>
+  
+</div><!-- Journal container -->
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
