@@ -1,8 +1,10 @@
 //* Header *//
 
 .logo-nav{
+  position: fixed;
+  background-color: hsla(0, 0%, 100%, .85);
   display: flex;
-  max-width: 100%;
+  width: 100%;
   padding: 0.3rem 10rem;
   border-bottom: 1px solid #e1e1e1;
   .search-submit {
@@ -18,10 +20,10 @@
     margin-left: 1rem;
     display: flex;
     align-self: flex-end;
-  }
+    }
 
 
-.main-navigation {
+  .main-navigation {
   clear: both;
   display: flex;
   align-items: center;
@@ -30,9 +32,9 @@
   justify-content: flex-end;
   text-transform: uppercase;
   font-family: $font__main;
-}
+  }
 
-fieldset {
+  fieldset {
   border-style: none;
   padding: 0;
   margin: 0;
@@ -40,9 +42,24 @@ fieldset {
   button{
     padding: 0;
   }
+  }
+
+  .search-field {
+  border-style: none;
+  }
 }
 
-.search-field {
-  border-style: none;
-}
+.home,
+.page-template-about {
+  .logo-nav{
+    background: rgba(0, 0, 0, 0);
+    position: absolute;
+    border-style: none;
+    a{
+      color: white;
+    }
+    a:hover{
+      color: #F0E4D1;
+    }
+  }
 }

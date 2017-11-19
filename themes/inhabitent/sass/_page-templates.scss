@@ -2,13 +2,12 @@
 # Page Templates
 --------------------------------------------------------------*/
 
-/* Front page */
+/* Front and About page */
 
 
-/* Home page*/
+/* frontpage hero image*/
 
   .home,
-  .blog,
      {
       //* Hero Section*//
       .hero-container{
@@ -22,10 +21,22 @@
     }
     }
 
-//* Header Original*//  
+    //* frontpage and about content*//
 
-  body.blog,
-  body.page-template-contact {
+    .home,
+    .page-template-about {
+      .container{
+        width: 1120px;
+      }
+      .entry-content {
+        text-align: center;
+      }
+    }
+
+//* journal and find us page*//  
+
+  .blog,
+  .page-template-contact {
     
 
     .site-content{

@@ -301,8 +301,7 @@ html {
 
 body {
   background: #fff;
-  /* Fallback for when there is no custom background color defined. */
-  width: 1120px; }
+  /* Fallback for when there is no custom background color defined. */ }
 
 blockquote, q {
   quotes: "" ""; }
@@ -666,10 +665,9 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-/* Front page */
-/* Home page*/
-.home .hero-container,
-.blog .hero-container {
+/* Front and About page */
+/* frontpage hero image*/
+.home .hero-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -679,61 +677,70 @@ object {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
-  .home .hero-container .hero-logo,
-  .blog .hero-container .hero-logo {
+  .home .hero-container .hero-logo {
     position: absolute; }
 
-body.blog .site-content,
-body.page-template-contact .site-content {
+.home .container,
+.page-template-about .container {
+  width: 1120px; }
+
+.home .entry-content,
+.page-template-about .entry-content {
+  text-align: center; }
+
+.blog .site-content,
+.page-template-contact .site-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
-body.blog .content-area,
-body.page-template-contact .content-area {
+.blog .content-area,
+.page-template-contact .content-area {
   width: 72%; }
 
-body.blog .entry-header,
-body.page-template-contact .entry-header {
+.blog .entry-header,
+.page-template-contact .entry-header {
   padding-top: 3rem;
   padding-bottom: 3rem;
   position: relative; }
-  body.blog .entry-header img,
-  body.page-template-contact .entry-header img {
+  .blog .entry-header img,
+  .page-template-contact .entry-header img {
     width: 100%; }
-  body.blog .entry-header h2,
-  body.blog .entry-header .entry-title,
-  body.page-template-contact .entry-header h2,
-  body.page-template-contact .entry-header .entry-title {
+  .blog .entry-header h2,
+  .blog .entry-header .entry-title,
+  .page-template-contact .entry-header h2,
+  .page-template-contact .entry-header .entry-title {
     background: #248A83;
     height: 100px;
     width: 500px;
     position: absolute;
     top: 0;
     text-align: center; }
-    body.blog .entry-header h2 a,
-    body.blog .entry-header .entry-title a,
-    body.page-template-contact .entry-header h2 a,
-    body.page-template-contact .entry-header .entry-title a {
+    .blog .entry-header h2 a,
+    .blog .entry-header .entry-title a,
+    .page-template-contact .entry-header h2 a,
+    .page-template-contact .entry-header .entry-title a {
       color: white;
       text-decoration: none;
       text-transform: uppercase; }
-    body.blog .entry-header h2 .widget-area,
-    body.blog .entry-header .entry-title .widget-area,
-    body.page-template-contact .entry-header h2 .widget-area,
-    body.page-template-contact .entry-header .entry-title .widget-area {
+    .blog .entry-header h2 .widget-area,
+    .blog .entry-header .entry-title .widget-area,
+    .page-template-contact .entry-header h2 .widget-area,
+    .page-template-contact .entry-header .entry-title .widget-area {
       text-align: start; }
-    body.blog .entry-header h2 .search-form,
-    body.blog .entry-header .entry-title .search-form,
-    body.page-template-contact .entry-header h2 .search-form,
-    body.page-template-contact .entry-header .entry-title .search-form {
+    .blog .entry-header h2 .search-form,
+    .blog .entry-header .entry-title .search-form,
+    .page-template-contact .entry-header h2 .search-form,
+    .page-template-contact .entry-header .entry-title .search-form {
       display: none; }
 
 .logo-nav {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.85);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 100%;
+  width: 100%;
   padding: 0.3rem 10rem;
   border-bottom: 1px solid #e1e1e1; }
   .logo-nav .search-submit {
@@ -776,3 +783,15 @@ body.page-template-contact .entry-header {
       padding: 0; }
   .logo-nav .search-field {
     border-style: none; }
+
+.home .logo-nav,
+.page-template-about .logo-nav {
+  background: transparent;
+  position: absolute;
+  border-style: none; }
+  .home .logo-nav a,
+  .page-template-about .logo-nav a {
+    color: white; }
+  .home .logo-nav a:hover,
+  .page-template-about .logo-nav a:hover {
+    color: #F0E4D1; }

@@ -41,11 +41,6 @@
 
 					<?php } ?>
 
-
-					
-						
-
-
 					</a>
 					<!-- <p class="site-description"><?php bloginfo( 'description' ); ?></p> -->
 				<!-- .site-branding -->
