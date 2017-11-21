@@ -41,7 +41,7 @@ get_header(); ?>
 	</div><!-- #primary -->
 <!-- Shop -->
 <section class= "product-info container">
-	<h2>Shop Stuff</h2>
+	<h1>Shop Stuff</h1>
             <?php
                $terms = get_terms( array(
                    'taxonomy' => 'product-type',
@@ -67,7 +67,7 @@ get_header(); ?>
 						</section>
 <!-- shop -->
 <h1>inhabitent journal</h1>
-<section class="inhab-journal-container">
+<section class="inhab-journal container">
 	<?php
     $args = array( 'numberposts' => '3', 'order' => 'ASC', );
     $product_posts = get_posts( $args );?>
