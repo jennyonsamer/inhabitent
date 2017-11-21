@@ -66,6 +66,7 @@ get_header(); ?>
 						<?php endif; ?>
 						</section>
 <!-- shop -->
+<h1>inhabitent journal</h1>
 <section class="inhab-journal-container">
 	<?php
     $args = array( 'numberposts' => '3', 'order' => 'ASC', );
