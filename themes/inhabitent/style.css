@@ -708,59 +708,64 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-/* Front and About page */
-/* frontpage hero image*/
-.home .container {
-  width: 1120px;
-  margin-left: auto;
-  margin-right: auto; }
-
-.home h1 {
-  text-transform: uppercase;
-  font-family: 'Novecento', sans-serif;
-  text-align: center; }
-
-.home .product-info {
-  width: 1120px;
-  max-width: 100%;
-  font-family: 'Merriweather', sans-serif; }
-
-.home .product-type-blocks {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  max-width: 100%; }
-
-.home .product-type-block-wrapper {
-  border: 1px solid #e1e1e1;
-  border-top-width: 5px;
-  text-align: center;
-  max-width: 23%;
-  padding: 1rem; }
-  .home .product-type-block-wrapper img {
-    width: 35%; }
-  .home .product-type-block-wrapper .btn {
-    text-decoration: none;
+/* Front page */
+.home {
+  /* Frontpage Hero image*/
+  /*Shop Stuff*/ }
+  .home .container {
+    width: 1120px;
+    margin-left: auto;
+    margin-right: auto; }
+  .home h1 {
     text-transform: uppercase;
-    padding: 1rem;
-    color: white;
-    background: #248A83; }
-
-.home .hero-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-  .home .hero-container .hero-logo {
-    position: absolute; }
+    font-family: 'Novecento', sans-serif;
+    text-align: center; }
+  .home .hero-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .home .hero-container .hero-logo {
+      position: absolute; }
+  .home .product-info {
+    width: 1120px;
+    max-width: 100%;
+    font-family: 'Merriweather', sans-serif; }
+  .home .product-type-blocks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: 100%; }
+  .home .product-type-block-wrapper {
+    border: 1px solid #e1e1e1;
+    border-top-width: 5px;
+    text-align: center;
+    max-width: 23%;
+    padding: 1rem; }
+    .home .product-type-block-wrapper img {
+      width: 35%; }
+    .home .product-type-block-wrapper .btn {
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 1rem;
+      color: white;
+      background: #248A83; }
+  .home .inhab-journal .journal-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .home .inhab-journal .journal-info img {
+      position: relative;
+      height: 250px;
+      width: 300px; }
 
 .home .container,
 .page-template-about .container {

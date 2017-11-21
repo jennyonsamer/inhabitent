@@ -2,124 +2,117 @@
 # Page Templates
 --------------------------------------------------------------*/
 
-/* Front and About page */
 
+/* Front page */
 
-/* frontpage hero image*/
-
-.home{
-  .container{
+.home {
+  .container {
     width: 1120px;
     margin-left: auto;
     margin-right: auto;
   }
-  h1{
+  h1 {
     text-transform: uppercase;
     font-family: 'Novecento', sans-serif;
     text-align: center;
-  
   }
-
+  /* Frontpage Hero image*/
+  .hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .hero-logo {
+      position: absolute;
+    }
+  }
+  /*Shop Stuff*/
   .product-info {
     width: 1120px;
     max-width: 100%;
     font-family: 'Merriweather', sans-serif;
-
-    }
-    .product-type-blocks {
-      display: flex;
-      justify-content: space-between;
-      max-width: 100%;
-    }
-    .product-type-block-wrapper{
-      border: 1px solid #e1e1e1; 
-      border-top-width: 5px;
-      
-       text-align: center;
-       max-width: 23%;
-       padding: 1rem;
-       img {
-         width:35%;
-       }
-       .btn{
-         text-decoration: none;
-         text-transform: uppercase;
-         padding: 1rem;
-         color: white;
-         background: $color__link;
-       }
-    } 
-    
-  
-     
-      //* Hero Section*//
-      .hero-container{
-       display: flex;
-       align-items: center;
-       justify-content: center;
-
-      .hero-logo{
-        position: absolute;
-      }
-      }
-      
   }
-
-    //* frontpage and about content*//
-
-    .home,
-    .page-template-about {
-      .container{
-        width: 1120px;
-      }
-      .entry-content {
-        text-align: center;
-      }
+  .product-type-blocks {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+  }
+  .product-type-block-wrapper {
+    border: 1px solid #e1e1e1;
+    border-top-width: 5px;
+    text-align: center;
+    max-width: 23%;
+    padding: 1rem;
+    img {
+      width: 35%;
     }
+    .btn {
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 1rem;
+      color: white;
+      background: $color__link;
+    }
+  }
+  // * inhab journal *//
+  .inhab-journal {
+    
+    
+    .journal-info {
+      display: flex;
+      img{
+        position: relative;
+        height: 250px;
+        width: 300px;
+    }
+  }
+  }
+} //.home
+ //* frontpage and about content*//
+.home,
+.page-template-about {
+  .container {
+    width: 1120px;
+  }
+  .entry-content {
+    text-align: center;
+  }
+}
 
 //* journal and find us page*//  
-
-  .blog,
-  .page-template-contact {
-    
-
-    .site-content{
-      display: flex;
-    }
-    .content-area {
-      width: 72%;
-    }
-
-    .entry-header {
-      padding-top: 3rem;
-      padding-bottom: 3rem;
-      position: relative;
-      img{
+.blog,
+.page-template-contact {
+  .site-content {
+    display: flex;
+  }
+  .content-area {
+    width: 72%;
+  }
+  .entry-header {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    position: relative;
+    img {
       width: 100%;
-      }
-      h2,
-      .entry-title{
-        background: $color__link;
-        height: 100px;
-        width: 500px;
-        position: absolute;
-        top: 0;
-        text-align: center;
-
-        a{
+    }
+    h2,
+    .entry-title {
+      background: $color__link;
+      height: 100px;
+      width: 500px;
+      position: absolute;
+      top: 0;
+      text-align: center;
+      a {
         color: white;
         text-decoration: none;
         text-transform: uppercase;
-        }
-
-        .widget-area{
-          text-align: start;
-          
-        }
-        .search-form{
-          display: none;
-        }
-
+      }
+      .widget-area {
+        text-align: start;
+      }
+      .search-form {
+        display: none;
       }
     }
   }
+}
