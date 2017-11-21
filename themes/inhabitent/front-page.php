@@ -39,8 +39,9 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-	<section class="product-info container">
-            <h2>Shop Stuff</h2>
+<!-- Shop -->
+<section class= "product-info container">
+	<h2>Shop Stuff</h2>
             <?php
                $terms = get_terms( array(
                    'taxonomy' => 'product-type',
@@ -62,9 +63,10 @@ get_header(); ?>
 
                </div>
                
-            <?php endif; ?>
-         </section>
-<div class="inhab-journal-container">
+						<?php endif; ?>
+						</section>
+<!-- shop -->
+<section class="inhab-journal-container">
 	<?php
     $args = array( 'numberposts' => '3', 'order' => 'ASC', );
     $product_posts = get_posts( $args );?>
@@ -84,6 +86,6 @@ get_header(); ?>
 
             <?php endforeach; wp_reset_postdata(); ?>
   
-</div><!-- Journal container -->
+</section><!-- Journal container -->
 
 <?php get_footer(); ?>

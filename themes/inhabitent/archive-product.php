@@ -1,9 +1,4 @@
 <?php
-/**
- * Template Name: Shop
- *
- * @package RED_Starter_Theme
- */
 
 get_header(); ?>
 
@@ -16,13 +11,28 @@ get_header(); ?>
 				<h2>
           Shop Stuff
         </h2>
+        
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
+        
+      <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<header class="entry-header">
+    <?php if ( has_post_thumbnail() ) : ?>
+    <a href= "<?php echo get_permalink();?>">
+      <?php the_post_thumbnail( 'large' ); ?>
+      
+		<?php endif; ?>
 
-				<?php
-					get_template_part( 'template-parts/content' );
-				?>
+		<p><?php the_title()  ?> .....</p><span class="price-meta"> ......<?php 
+$meta_print_value=get_post_meta(get_the_ID(),'price',true);
+echo($meta_print_value);
+?></span>
+
+		<?php if ( 'post' === get_post_type() ) : ?>
+		<?php endif; ?>
+	</header><!-- .entry-header -->
+</article><!-- #post-## -->
 
 			<?php endwhile; ?>
 
@@ -35,7 +45,6 @@ get_header(); ?>
 		<?php endif; ?>
 
 		</main><!-- #main -->
-	</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
-<?php get_footer(); ?>
+  </div><!-- #primary -->
+  
+  <?php get_footer(); ?>

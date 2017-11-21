@@ -735,6 +735,7 @@ object {
       display: none; }
 
 .logo-nav {
+  z-index: 1;
   position: fixed;
   background-color: rgba(255, 255, 255, 0.85);
   display: -webkit-box;
@@ -795,3 +796,22 @@ object {
   .home .logo-nav a:hover,
   .page-template-about .logo-nav a:hover {
     color: #F0E4D1; }
+
+.container {
+  width: 1120px;
+  max-width: 100%; }
+  .container .product-type-blocks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: 100%; }
+    .container .product-type-blocks .product-type-block-wrapper {
+      border-top-width: 5px;
+      border: 1px solid #e1e1e1;
+      text-align: center;
+      max-width: 25%; }
+      .container .product-type-blocks .product-type-block-wrapper img {
+        width: 25%; }

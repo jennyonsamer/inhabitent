@@ -1,0 +1,18 @@
+.container {
+  width: 1120px;
+  max-width: 100%;
+  .product-type-blocks {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    .product-type-block-wrapper{
+      border-top-width: 5px;
+      border: 1px solid #e1e1e1;
+      text-align: center;
+      max-width: 25%;
+      img {
+        width:25%;
+      }
+    } 
+  }
+}

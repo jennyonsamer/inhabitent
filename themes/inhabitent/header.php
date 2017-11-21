@@ -29,7 +29,7 @@
 				<div class="logo-nav">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 
-					<?php if ( is_front_page() || is_page('about')  || is_page('shop') ) { ?>
+					<?php if ( is_front_page() || is_page('about') ) { ?>
 
 						<img src="<?php echo get_template_directory_uri() . '/images/inhabitent-logo-tent-white.svg'; ?>" class="logo" alt="inhabitent logo" />
 
