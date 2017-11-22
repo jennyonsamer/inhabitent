@@ -13,8 +13,9 @@
   }
   h1 {
     text-transform: uppercase;
-    font-family: 'Novecento', sans-serif;
+    font-family: $font-no;
     text-align: center;
+    font-weight: 300;
   }
   /* Frontpage Hero image*/
   .hero-container {
@@ -29,7 +30,7 @@
   .product-info {
     width: 1120px;
     max-width: 100%;
-    font-family: 'Merriweather', sans-serif;
+    font-family: $font-me;
   }
   .product-type-blocks {
     display: flex;
@@ -55,10 +56,12 @@
   }
   // * inhab journal *//
   .inhab-journal {
-    
+    display: flex;
+    flex-wrap: wrap;
     
     .journal-info {
       display: flex;
+      flex-direction: column;
       img{
         position: relative;
         height: 250px;
@@ -80,7 +83,7 @@
 
 //* journal and find us page*//  
 .blog,
-.page-template-contact {
+.page-template-default {
   .site-content {
     display: flex;
   }

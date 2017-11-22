@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Home
+ * The main template file.
  *
  * @package RED_Starter_Theme
  */

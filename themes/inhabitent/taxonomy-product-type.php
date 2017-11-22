@@ -9,27 +9,9 @@ get_header(); ?>
 
 			<header class="page-header">
 				<h2>
-          Shop Stuff
+          <?php single_term_title(); ?>
         </h2>
-        <?php
-               $terms = get_terms( array(
-                   'taxonomy' => 'product-type',
-                   'hide_empty' => 0,
-               ) );
-							 if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) :
-            ?>
-               <div class="product-type-blocks">
-
-                  <?php foreach ( $terms as $term ) : ?>
-
-                     <div class="product-type-block-wrapper">
-                       
-                        
-                        <p><a href="<?php echo get_term_link( $term ); ?>" class="btn"><?php echo $term->name; ?></a></p>
-                     </div>
-
-                  <?php endforeach; ?>
-							 <?php endif; ?>
+        
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>

@@ -68,11 +68,15 @@ get_header(); ?>
 <!-- shop -->
 <h1>inhabitent journal</h1>
 <section class="inhab-journal container">
-<div class= "journal-info">
-	<?php
+
+<?php
     $args = array( 'numberposts' => '3', 'order' => 'ASC', );
     $product_posts = get_posts( $args );?>
             <?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
+
+
+<article class= "journal-info">
+	
 								
 								
 						<?php if ( has_post_thumbnail() ) : ?>
@@ -86,7 +90,8 @@ get_header(); ?>
 		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 
 		<a href="<?php echo get_the_permalink();?>"> <p>Read Entry</p></a>
-		</div>
+		</article>
+
             <?php endforeach; wp_reset_postdata(); ?>
   
 </section><!-- Journal container -->

@@ -10,8 +10,28 @@
 			</div><!-- #content -->
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
+
+			<div class="footer-items">
+				<div class="footer-item">
+					contact info
+				</div>
+
+				<div class="footer-item">
+					business hours
+				</div>
+
+				<div class="footer-item">
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+						<img src="<?php echo get_template_directory_uri() . '/images/inhabitent-logo-text-dark.svg'; ?>" class="logo" alt="inhabitent logo" />
+					</a>
+				</div>
+
+					
+			</div>
+			
+
 				<div class="site-info">
-					<a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a>
+					<p>copyright © 2016 inhabitent</p>
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
