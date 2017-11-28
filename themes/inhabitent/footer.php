@@ -43,7 +43,7 @@
 						</p>
 				</div>
 
-				<div class="footer-item">
+				<div class="footer-item footer-logo">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 						<img src="<?php echo get_template_directory_uri() . '/images/inhabitent-logo-text-dark.svg'; ?>" class="logo" alt="inhabitent logo" />
 					</a>

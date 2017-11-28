@@ -913,7 +913,10 @@ object {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
-            flex-direction: row; }
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-left: 10rem; }
     .site-footer .footer-items .footer-item {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -923,7 +926,21 @@ object {
           -ms-flex-direction: column;
               flex-direction: column;
       margin-top: 3rem;
-      width: 25rem; }
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1; }
+    .site-footer .footer-items .footer-logo {
+      -webkit-box-flex: 3;
+          -ms-flex-positive: 3;
+              flex-grow: 3;
+      text-align: right;
+      margin-right: 10rem; }
+  .site-footer .fa-facebook-square,
+  .site-footer .fa-twitter-square,
+  .site-footer .fa-google-plus-square {
+    margin-right: 1rem; }
+  .site-footer span {
+    margin-top: 1rem; }
   .site-footer a {
     color: white;
     text-decoration: none;
@@ -932,10 +949,18 @@ object {
     font-family: "Novecento", sans-serif;
     text-transform: uppercase;
     color: #d99054; }
+  .site-footer p {
+    margin-bottom: 0.5rem; }
+  .site-footer img {
+    margin-top: 1rem; }
   .site-footer .site-info {
     text-align: center;
     text-transform: uppercase;
-    font-family: "Novecento", sans-serif;
-    padding: 1.5 rem 0; }
+    font-family: "Novecento", sans-serif; }
+    .site-footer .site-info p {
+      padding-top: 2rem;
+      margin-bottom: 0; }
   .site-footer .hours {
     font-family: "Merriweather", serif; }
+  .site-footer .day-of-week {
+    font-weight: 700; }
