@@ -19,11 +19,15 @@
   }
   /* Frontpage Hero image*/
   .hero-container {
+    background: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)), url(../../images/home-hero.jpg),;
+    height: 100vh;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
     .hero-logo {
       position: absolute;
+      
     }
   }
   /*Shop Stuff*/

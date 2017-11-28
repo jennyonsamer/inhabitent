@@ -4,4 +4,36 @@
   background-repeat: repeat;
   height: 350px;
   width: 100%;
+  color: white;
+  .footer-items {
+    display: flex;
+    flex-direction: row;
+    
+    .footer-item {
+      display: flex;
+      flex-direction: column;
+      margin-top: 3rem;
+      width: 25rem;
+    }
+  }
+  a{
+    color: white;
+    text-decoration: none;
+    font-family: $font-me;
+  }
+  h3{
+    font-family: $font-no;
+    text-transform: uppercase;
+    color: #d99054;
+  }
+  .site-info{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $font-no;
+    padding: 1.5 rem 0;
+    
+  }
+  .hours {
+    font-family: $font-me;
+  }
 }

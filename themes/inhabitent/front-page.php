@@ -10,7 +10,6 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 		<section class="hero-container">
-		<img src="<?php echo get_template_directory_uri() . '/images/home-hero.jpg'; ?>" class="home-hero" alt="inhabitent front page hero" />
 		<img src="<?php echo get_template_directory_uri() . '/images/inhabitent-logo-full.svg'; ?>" class="hero-logo" alt="inhabitent logo" />
 		</section>
 
