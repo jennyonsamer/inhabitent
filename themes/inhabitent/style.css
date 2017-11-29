@@ -988,6 +988,50 @@ object {
 .archive .nav-previous a {
   display: none; }
 
+.tax-product-type .page-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin: 0 5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.tax-product-type h2 {
+  margin-bottom: 3rem; }
+
+.tax-product-type article {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 25%;
+          flex: 0 1 25%;
+  border-left: 15px solid white;
+  border-right: 15px solid white;
+  border-top: 6px solid white;
+  border-bottom: 6px solid white;
+  max-width: 23%;
+  height: auto; }
+  .tax-product-type article a {
+    text-decoration: none; }
+  .tax-product-type article img {
+    height: 230px;
+    overflow: hidden;
+    border-bottom: 5px solid #e1e1e1; }
+  .tax-product-type article p {
+    text-align: center;
+    border: 1px solid #e1e1e1;
+    padding: 1rem 1rem;
+    margin: -.5rem 0rem;
+    color: black;
+    font-family: "Merriweather", serif;
+    font-size: .9rem; }
+
+.tax-product-type #post-51 {
+  display: none; }
+
 .logo-nav {
   z-index: 1;
   position: fixed;

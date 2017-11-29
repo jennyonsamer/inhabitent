@@ -278,3 +278,44 @@
     }
   }
 }
+
+.tax-product-type {
+  .page-header {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 5rem;
+    justify-content: center;
+  }
+  h2{
+    margin-bottom: 3rem;
+  }
+  article {
+    flex: 0 1 25%;
+    border-left: 15px solid white;
+    border-right: 15px solid white;
+    border-top: 6px solid white;
+    border-bottom: 6px solid white;
+    max-width: 23%;
+    height: auto;
+    a{
+      text-decoration: none;
+      }
+    img {
+      height: 230px;
+      overflow: hidden;
+      border-bottom: 5px solid #e1e1e1;
+    }
+    p{
+      text-align: center;
+      border: 1px solid #e1e1e1;
+      padding: 1rem 1rem;
+      margin: -.5rem 0rem;
+      color: black;
+      font-family: $font-me;
+      font-size: .9rem;
+    }
+  }
+  #post-51{
+    display: none;
+  }
+}

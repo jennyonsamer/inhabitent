@@ -6,11 +6,11 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
-
+		  <h2>
+        <?php single_term_title(); ?>
+      </h2>
 			<header class="page-header">
-				<h2>
-          <?php single_term_title(); ?>
-        </h2>
+			
         
 
 			<?php /* Start the Loop */ ?>
@@ -24,10 +24,10 @@ get_header(); ?>
       
 		<?php endif; ?>
 
-		<p><?php the_title()  ?> .....</p><span class="price-meta"> ......<?php 
+		<p><?php the_title()  ?><span class="price-meta"> ...........$<?php 
 $meta_print_value=get_post_meta(get_the_ID(),'price',true);
 echo($meta_print_value);
-?></span>
+?></span></p>
 
 		<?php if ( 'post' === get_post_type() ) : ?>
 		<?php endif; ?>
