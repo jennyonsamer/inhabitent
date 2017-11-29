@@ -92,5 +92,12 @@ get_header(); ?>
             <?php endforeach; wp_reset_postdata(); ?>
   
 </section><!-- Journal container -->
+<section class="adventure"><!-- Adventure -->
+	<h1>Latest Adventures</h1>
+	<img src="<?php echo get_template_directory_uri() . '/images/canoe-girl.jpg'; ?>" class="canoe" alt="canoe girl" />
+	<img src="<?php echo get_template_directory_uri() . '/images/beach-bonfire.jpg'; ?>" class="beach" alt="beach bonfire" />
+	<img src="<?php echo get_template_directory_uri() . '/images/mountain-hikers.jpg'; ?>" class="mountain" alt="mountain hikers" />
+	<img src="<?php echo get_template_directory_uri() . '/images/night-sky.jpg'; ?>" class="night-sky" alt="night sky" />
+</section>
 
 <?php get_footer(); ?>

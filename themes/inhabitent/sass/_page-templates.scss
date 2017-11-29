@@ -1,7 +1,12 @@
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-
+.content-area,
+.widget-area,
+:not(.page-tempalte-about.content-area) {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
 
 /* Front page */
 
@@ -118,13 +123,37 @@
 .home,
 .page-template-about {
   .container {
-    width: 1120px;
+    width: 100%;
+    margin-bottom: 4rem;
   }
   .entry-content {
     text-align: center;
+    margin: 1rem 20rem;
   }
 }
-
+// ONLY about page
+.page-template-about {
+  .entry-header{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-family: $font-no;
+    font-size: 1.5rem;
+  }
+  h2 {
+    text-transform: uppercase;
+    color: black;
+    font-family: $font-no;
+    font-size: 2rem;
+  }
+  .p1{
+    font-family: $font-me;
+    text-align: left;
+    margin-bottom: 1.5rem;
+  }
+}
 //* journal and find us page*//  
 .blog,
 .page-template-default {

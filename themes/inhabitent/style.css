@@ -708,6 +708,12 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+.content-area,
+.widget-area,
+:not(.page-tempalte-about.content-area) {
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+
 /* Front page */
 .home {
   /* Frontpage Hero image*/
@@ -820,11 +826,37 @@ object {
 
 .home .container,
 .page-template-about .container {
-  width: 1120px; }
+  width: 100%;
+  margin-bottom: 4rem; }
 
 .home .entry-content,
 .page-template-about .entry-content {
-  text-align: center; }
+  text-align: center;
+  margin: 1rem 20rem; }
+
+.page-template-about .entry-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-family: "Novecento", sans-serif;
+  font-size: 1.5rem; }
+
+.page-template-about h2 {
+  text-transform: uppercase;
+  color: black;
+  font-family: "Novecento", sans-serif;
+  font-size: 2rem; }
+
+.page-template-about .p1 {
+  font-family: "Merriweather", serif;
+  text-align: left;
+  margin-bottom: 1.5rem; }
 
 .blog .site-content,
 .page-template-default .site-content {
