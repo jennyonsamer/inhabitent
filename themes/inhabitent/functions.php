@@ -117,7 +117,7 @@ require get_template_directory() . '/inc/extras.php';
 //*limits posts to 20 per page
 function inhabitent_limit_archive_posts($query){
 	if ( $query->is_archive ) {
-					$query->set( 'posts_per_page', 20) ;
+					$query->set( 'posts_per_page', 16) ;
 	}
 	return $query;
 }

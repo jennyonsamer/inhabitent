@@ -5,6 +5,17 @@
   $('.main-navigation .search-submit').on('click', function(event){
     event.preventDefault();
     $('.main-navigation .search-field').toggle().focus();
+
+
+    $(document).keypress(function( event ) {
+      if ( event.which == 13 ) {
+         event.preventDefault();
+         $('.search-form').submit();
+      }
+    });
+
+
+
     
   });
 

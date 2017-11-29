@@ -709,10 +709,15 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 .content-area,
-.widget-area,
-:not(.page-tempalte-about.content-area) {
-  padding-top: 3rem;
+.widget-area {
+  padding-top: 4rem;
   padding-bottom: 3rem; }
+
+.page-template-about .content-area {
+  padding: 0; }
+
+.home .content-area {
+  padding: 0; }
 
 /* Front page */
 .home {
@@ -834,6 +839,9 @@ object {
   text-align: center;
   margin: 1rem 20rem; }
 
+.home .container {
+  width: 1120px; }
+
 .page-template-about .entry-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -903,6 +911,82 @@ object {
     .page-template-default .entry-header h2 .search-form,
     .page-template-default .entry-header .entry-title .search-form {
       display: none; }
+
+.archive h2 {
+  font-family: "Novecento", sans-serif;
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 0; }
+
+.archive .product-type-blocks {
+  margin-right: 9rem;
+  margin-left: 9rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px dashed #e1e1e1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .archive .product-type-blocks a {
+    text-decoration: none; }
+  .archive .product-type-blocks p {
+    font-family: "Novecento", sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin: 1rem 2rem; }
+
+.archive .category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin: 0 5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .archive .category article {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 25%;
+            flex: 0 1 25%;
+    border-left: 15px solid white;
+    border-right: 15px solid white;
+    border-top: 6px solid white;
+    border-bottom: 6px solid white;
+    max-width: 23%;
+    height: auto; }
+    .archive .category article a {
+      text-decoration: none; }
+    .archive .category article img {
+      height: 230px;
+      overflow: hidden;
+      border-bottom: 5px solid #e1e1e1; }
+    .archive .category article p {
+      text-align: center;
+      border: 1px solid #e1e1e1;
+      padding: 1rem 1rem;
+      margin: -.5rem 0rem;
+      color: black;
+      font-family: "Merriweather", serif;
+      font-size: .9rem; }
+
+.archive .product-block {
+  background-color: teal;
+  width: 300px;
+  display: inline-block;
+  height: 300px; }
+
+.archive .nav-previous a {
+  display: none; }
 
 .logo-nav {
   z-index: 1;
