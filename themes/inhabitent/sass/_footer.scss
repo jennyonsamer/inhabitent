@@ -5,7 +5,6 @@
   height: 350px;
   width: 100%;
   color: white;
-  
   .footer-items {
     display: flex;
     flex-direction: row;
@@ -40,18 +39,21 @@
     font-family: $font-no;
     text-transform: uppercase;
     color: #d99054;
+    margin-top: 1rem;
+    margin-bottom: 0;
   }
   p {
     margin-bottom: 0.5rem;
   }
   img {
+    width: 50%;
     margin-top: 1rem;
   }
   .site-info {
     text-align: center;
     text-transform: uppercase;
     font-family: $font-no;
-    p{
+    p {
       padding-top: 2rem;
       margin-bottom: 0;
     }

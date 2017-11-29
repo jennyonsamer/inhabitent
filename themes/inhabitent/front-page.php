@@ -65,30 +65,28 @@ get_header(); ?>
 						<?php endif; ?>
 						</section>
 <!-- shop -->
-<h1>inhabitent journal</h1>
+<h1>Inhabitent Journal</h1>
 <section class="inhab-journal container">
 
 <?php
-    $args = array( 'numberposts' => '3', 'order' => 'ASC', );
+    $args = array( 'numberposts' => '3', 'order' => 'DSC', );
     $product_posts = get_posts( $args );?>
             <?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
 
 
 <article class= "journal-info">
-	
-								
-								
-						<?php if ( has_post_thumbnail() ) : ?>
-			<?php the_post_thumbnail( 'medium' ); ?>
-		<?php endif; ?>
-  
+	<?php if ( has_post_thumbnail() ) : ?>
+	<?php the_post_thumbnail( 'medium' ); ?>
+	<?php endif; ?>
+	<div class="post-info">
 		<div class="entry-meta">
-			<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?>
+			<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
 		</div><!-- .entry-meta -->
 
-		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+			<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 
-		<a href="<?php echo get_the_permalink();?>"> <p>Read Entry</p></a>
+			<a href="<?php echo get_the_permalink();?>"> <p>Read Entry</p></a>
+		 </div>
 		</article>
 
             <?php endforeach; wp_reset_postdata(); ?>
