@@ -13,7 +13,9 @@
 			<?php the_post_thumbnail( 'large' ); ?>
 		<?php endif; ?>
 
-		
+		<h2>
+        <?php the_title(); ?>
+      </h2>
 
 		<?php if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">

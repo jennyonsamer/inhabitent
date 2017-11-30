@@ -92,12 +92,31 @@ get_header(); ?>
             <?php endforeach; wp_reset_postdata(); ?>
   
 </section><!-- Journal container -->
+<h1>Latest Adventures</h1>
 <section class="adventure"><!-- Adventure -->
-	<h1>Latest Adventures</h1>
-	<img src="<?php echo get_template_directory_uri() . '/images/canoe-girl.jpg'; ?>" class="canoe" alt="canoe girl" />
-	<img src="<?php echo get_template_directory_uri() . '/images/beach-bonfire.jpg'; ?>" class="beach" alt="beach bonfire" />
-	<img src="<?php echo get_template_directory_uri() . '/images/mountain-hikers.jpg'; ?>" class="mountain" alt="mountain hikers" />
-	<img src="<?php echo get_template_directory_uri() . '/images/night-sky.jpg'; ?>" class="night-sky" alt="night sky" />
+
+		<div class="canoe">
+			<h3>Getting Back to Nature in a Canoe</h3>
+			<a class="read-more">Read More</a>
+		</div>
+
+
+		<div class="friends">
+			<h3>A Night with Friends at the Beach</h3>
+			<a class="read-more">Read More</a>
+		</div>
+
+
+		<div class="mountain">
+			<h3>Taking in the View at Big Mountain</h3>
+			<a class="read-more">Read More</a>
+		</div>
+
+		<div class="star">
+			<h3>Star-gazing at the Night Sky</h3>
+			<a class="read-more">Read More</a>
+		</div>
+	<p><a class="more-adventures">More Adventures</a></p>
 </section>
 
 <?php get_footer(); ?>

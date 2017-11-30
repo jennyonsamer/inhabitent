@@ -5,25 +5,43 @@
  * @package RED_Starter_Theme
  */
 
-get_header(); ?>
+
+ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php get_template_part( 'template-parts/content', 'single' ); ?>
+			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+          <div class="img-wrapper">
+            <?php if ( has_post_thumbnail() ) : ?>
+              <?php the_post_thumbnail('large'); ?>
+                <?php endif; ?>
 
-			<?php the_post_navigation(); ?>
+                  <?php if ( 'post' === get_post_type() ) : ?>
+                    
+                    <?php endif; ?>
+          </div>
+          <!-- .entry-header -->
 
-			<?php
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
-			?>
+          <div class="entry-content">
+						<?php the_title( sprintf( '<h2 class="entry-title">', esc_url( get_permalink() ) ), '</h2>' ); ?>
+			<p class='single-price'>$<?php echo CFS()->get( 'price' ); ?></p>
+              <?php the_content(); ?>
+            <div class='social'>
+              <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i> Like</a>
+            	<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> Tweet</a>
+              <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i> Pin</a>
+                </div>
 
-		<?php endwhile; // End of the loop. ?>
+          </div>
+          <!-- .entry-content -->
+        </article>
+        <!-- #post-## -->
+
+			
+<?php endwhile; ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

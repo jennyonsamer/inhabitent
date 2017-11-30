@@ -723,6 +723,8 @@ object {
 .home {
   /* Frontpage Hero image*/
   /*Shop Stuff*/ }
+  .home .entry-header {
+    display: none; }
   .home .container {
     width: 1120px;
     margin-left: auto;
@@ -828,6 +830,96 @@ object {
         margin-bottom: 4rem; }
         .home .inhab-journal .journal-info .entry-title a {
           text-decoration: none; }
+  .home .adventure h3 {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-size: 2.4rem;
+    letter-spacing: 2px;
+    color: white;
+    margin: 1.5rem; }
+  .home .friends h3 {
+    font-size: 2rem; }
+  .home .star h3, .home .mountain h3 {
+    font-size: 1.5rem; }
+  .home .adventure {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 1120px;
+    height: 540px;
+    position: relative;
+    margin-bottom: 9rem;
+    margin-right: auto;
+    margin-left: auto; }
+    .home .adventure .canoe {
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../../images/canoe-girl.jpg);
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../images/canoe-girl.jpg);
+      background-size: 155%;
+      background-position: 50%;
+      width: 50%;
+      height: 100%;
+      border-right: 20px solid white; }
+    .home .adventure .friends {
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../../images/beach-bonfire.jpg);
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../images/beach-bonfire.jpg);
+      height: 50%;
+      width: 50%;
+      background-size: 110%;
+      border-bottom: 20px solid #fff;
+      background-position: 15% 75%; }
+    .home .adventure .mountain {
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../../images/mountain-hikers.jpg);
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../images/mountain-hikers.jpg);
+      position: absolute;
+      height: 50%;
+      width: 25%;
+      bottom: 0;
+      left: 50%;
+      background-size: 170%;
+      background-position: center;
+      border-right: 10px solid white; }
+    .home .adventure .star {
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../../images/night-sky.jpg);
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../images/night-sky.jpg);
+      position: absolute;
+      height: 50%;
+      width: 25%;
+      bottom: 0;
+      right: 0;
+      background-size: 170%;
+      background-position: center;
+      border-left: 10px solid white; }
+    .home .adventure a:hover {
+      background-color: #248A83;
+      color: white;
+      border: none; }
+    .home .adventure .read-more {
+      border: 1px solid #fff;
+      color: #fff;
+      background-color: transparent;
+      margin-left: 1.5rem;
+      text-transform: uppercase;
+      font-family: "Novecento", sans-serif;
+      font-size: .9rem;
+      padding: .8rem 1.5rem; }
+  .home .more-adventures {
+    font-family: "Novecento", sans-serif;
+    text-transform: uppercase;
+    background: #248a83;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: .75rem 1.5rem;
+    text-decoration: none;
+    margin: 2rem 3rem;
+    position: absolute;
+    bottom: -125px;
+    left: -47px; }
 
 .home .container,
 .page-template-about .container {
@@ -866,51 +958,83 @@ object {
   text-align: left;
   margin-bottom: 1.5rem; }
 
+.blog .widget-area,
+.page-id-18 .widget-area {
+  padding-left: 3rem;
+  width: 25%; }
+  .blog .widget-area .widget-title,
+  .page-id-18 .widget-area .widget-title {
+    text-transform: uppercase; }
+
 .blog .site-content,
-.page-template-default .site-content {
+.page-id-18 .site-content {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  width: 1120px;
+  margin-left: auto;
+  margin-right: auto; }
 
 .blog .content-area,
-.page-template-default .content-area {
-  width: 72%; }
+.page-id-18 .content-area {
+  padding-right: 7rem;
+  width: 77%;
+  border-right: 1px solid #e1e1e1; }
 
 .blog .entry-header,
-.page-template-default .entry-header {
+.page-id-18 .entry-header {
   padding-top: 3rem;
-  padding-bottom: 3rem;
   position: relative; }
   .blog .entry-header img,
-  .page-template-default .entry-header img {
+  .page-id-18 .entry-header img {
     width: 100%; }
   .blog .entry-header h2,
-  .blog .entry-header .entry-title,
-  .page-template-default .entry-header h2,
-  .page-template-default .entry-header .entry-title {
+  .page-id-18 .entry-header h2 {
     background: #248A83;
+    color: white;
     height: 100px;
     width: 500px;
     position: absolute;
-    top: 0;
-    text-align: center; }
+    top: 4rem;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-family: "Novecento", sans-serif;
+    padding-left: 1.5rem; }
     .blog .entry-header h2 a,
-    .blog .entry-header .entry-title a,
-    .page-template-default .entry-header h2 a,
-    .page-template-default .entry-header .entry-title a {
+    .page-id-18 .entry-header h2 a {
       color: white;
       text-decoration: none;
       text-transform: uppercase; }
-    .blog .entry-header h2 .widget-area,
-    .blog .entry-header .entry-title .widget-area,
-    .page-template-default .entry-header h2 .widget-area,
-    .page-template-default .entry-header .entry-title .widget-area {
-      text-align: start; }
-    .blog .entry-header h2 .search-form,
-    .blog .entry-header .entry-title .search-form,
-    .page-template-default .entry-header h2 .search-form,
-    .page-template-default .entry-header .entry-title .search-form {
-      display: none; }
+
+.blog .entry-meta,
+.page-id-18 .entry-meta {
+  position: absolute;
+  right: 0;
+  bottom: 7px;
+  padding: .1rem 1.3rem;
+  text-transform: uppercase;
+  font-family: "Novecento", sans-serif;
+  background: #248A83;
+  color: white; }
+
+.blog article p,
+.page-id-18 article p {
+  font-family: "Merriweather", serif; }
+
+.blog article .read-more,
+.page-id-18 article .read-more {
+  text-transform: uppercase;
+  font-family: "Novecento", sans-serif; }
+  .blog article .read-more a,
+  .page-id-18 article .read-more a {
+    text-decoration: none;
+    padding: .75rem 1.5rem;
+    border: 1px solid black;
+    color: black; }
+
+.page-id-18 .entry-header {
+  padding: 0; }
 
 .archive h2 {
   font-family: "Novecento", sans-serif;
@@ -1031,6 +1155,42 @@ object {
 
 .tax-product-type #post-51 {
   display: none; }
+
+.single-product article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1120px;
+  margin-right: auto;
+  margin-left: auto; }
+  .single-product article a {
+    border: 1px solid #000;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: .5rem 1.5rem;
+    font-family: "Novecento", sans-serif; }
+  .single-product article i {
+    padding-right: 2px; }
+
+.single-product .img-wrapper {
+  width: 270%; }
+
+.single-product .entry-content {
+  margin-left: 3rem;
+  margin-top: 0; }
+
+.single-product .entry-title {
+  font-family: "Novecento", sans-serif;
+  letter-spacing: 2px;
+  margin: 0;
+  text-transform: uppercase;
+  color: #d99054;
+  font-size: 2.5rem; }
+
+.single-product .single-price {
+  font-family: "Novecento", sans-serif;
+  font-size: 1.5rem; }
 
 .logo-nav {
   z-index: 1;

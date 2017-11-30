@@ -14,14 +14,38 @@ get_header(); ?>
 
 			<?php if ( is_home() && ! is_front_page() ) : ?>
 				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+					<h1 class="page-title screen-reader-text">
+						<?php
+						//  the_title();
+						  ?></h1>
 				</header>
 			<?php endif; ?>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
+			
+			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<header class="entry-header">
+		<?php if ( has_post_thumbnail() ) : ?>
+			<?php the_post_thumbnail( 'large' ); ?>
+		<?php endif; ?>
 
-				<?php get_template_part( 'template-parts/content' ); ?>
+		<h2>
+        <?php the_title(); ?>
+      </h2>
+
+		<?php if ( 'post' === get_post_type() ) : ?>
+		<div class="entry-meta">
+			<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?>
+		</div><!-- .entry-meta -->
+		<?php endif; ?>
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<?php the_excerpt(); ?>
+	</div><!-- .entry-content -->
+	<p class="read-more"><a href="<?php echo get_permalink(); ?>">Read More →</a></p>
+</article><!-- #post-## -->
 
 			<?php endwhile; ?>
 
